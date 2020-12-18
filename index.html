@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Disease Prediction</title>
+</head>
+<body class="body">
+    <nav class="topnav">
+        <h1>ML Diagnosis</h1>
+    </nav>
+    <div class="introduction">
+        <p>This model predicts diagnosis from the signs or symptoms chosen from below. </p>
+    </div>
+    <form action="" class="form">
+        <h1>Signs and symptoms</h1>
+        <div class="content2">
+            <div class="container">
+                <h3>Skin</h3>
+                <button name="itching" value="0" id="itching" class="symptom">itching</button>
+                <button name="skin_rash" value="0" id="skinrash" class="symptom">Skin rash</button>
+                <button name="nodal_skin_eruptions" id="nodal"value="0" class="symptom">Nodal skin eruption</button>
+                <button name="yellowish_skin" value="0" id="yellowishskin"class="symptom">Yellowish skin</button>
+                <button name="bruising" value="0" id="bruising" class="symptom">Bruising</button>
+                <button name="brittle_nail" value="0" id="Brittlenail" class="symptom">Brittle nail</button>
+                <button name="drying_and_tingling_lips" value="0" id="dryingandtinglinglips" class="symptom">Drying and tingling lips</button>
+                <button name="red_spots_over_body" value="0" id="redspotsoverbody" class="symptom">Red spots over body</button>
+                <button name="dischromic_patches" value="0" id="dischromicpatches" class="symptom">Dischromic patches</button>
+                <button name="pus_filled_pimples" value="0" id="pusfilledpimples" class="symptom">Pus filled pimples</button>
+                <button name="blackheads" value="0" id="blackheads" class="symptom">Blackheads</button>
+                <button name="scurring" value="0" id="scurring" class="symptom">Scurring</button>
+                <button name="skin_peeling" value="0" id="skinpeeling" class="symptom">Skin peeling</button>
+                <button name="silver_like_dusting" value="0" id="silverlikedusting" class="symptom">Silver like dusting</button>
+                <button name="small_dents_in_nails" value="0" id="smalldentsinnails" class="symptom">Small dents in nails</button>
+                <button name="inflammatory_nails" value="0" id="inflammatorynails" class="symptom">Inflammatory nails</button>
+                <button name="blister" value="0" id="blister" class="symptom">Blister</button>
+                <button name="red_sore_around_nose" value="0" id="redsorearoundnose" class="symptom">Red sore around nose</button>
+                <button name="yellow_crust_ooze" value="0" id="yellowcrustooze" class="symptom">Yellow crust ooze</button>
+            </div>
+            <div class="container">
+                <h3>Respiratory</h3>
+                <button name="continuous_sneezing" id="cont"value="0" class="symptom">Continuous Sneezing</button>
+                <button name="shivering" value="0" id="shivering"class="symptom">Shivering</button>
+                <button name="chills" value="0" id="chills"class="symptom">chills</button>
+                <button name="cough" value="0" id="cough" class="symptom">Cough</button>
+                <button name="breathlessness" value="0" id="breathlessness"class="symptom">Breathlessness</button>
+                <button name="phlegm" value="0" id="phlegm" class="symptom">Phlegm</button>
+                <button name="throat_irritation" value="0" id="throatirritation" class="symptom">Throat irritation</button>
+                <button name="sinus_pressure" value="0" id="sinuspressure" class="symptom">Sinus Pressure</button>
+                <button name="runny_nose" value="0" id="runnynose" class="symptom">Runny nose</button>
+                <button name="congestion" value="0" id="congestion" class="symptom">Congestion</button>
+                <button name="loss_of_smell" value="0" id="lossofsmell" class="symptom">loss of smell</button>
+                <button name="palpitations" value="0" id="palpitations" class="symptom">Palpitations</button>
+                <button name="blood_in_sputum" value="0" id="bloodinsputum" class="symptom">Blood in sputum</button>
+                <button name="rusty_sputum" value="0" id="rustysputum" class="symptom">Rusty sputum</button>
+            </div>
+            <div class="container">
+                <h3>GIT</h3>
+                <button name="stomach_pain" value="0" id="stomachpain" class="symptom">Stomach pain</button>
+                <button name="acidity" value="0" id="acidity" class="symptom">Acidity</button>
+                <button name="ulcers_on_tongue" value="0" id="tongueUlcer"class="symptom">Ulcer on tongue</button>
+                <button name="weight_gain" value="0" id="weightgain" class="symptom">Weight gain</button>
+                <button name="vomiting" value="0" id="vomiting"class="symptom">Vomiting</button>
+                <button name="weight_loss" value="0" id="weightloss"class="symptom">Weight loss</button>
+                <button name="patches_in_throat" value="0" id="patchesthroat"class="symptom">Patches in throat</button>
+                <button name="irregular_sugar_level" value="0" id="irregularsugarlevel"class="symptom">Irregular sugar level</button>
+                <button name="constipation" value="0" id="constipation"class="symptom">Constipation</button>
+                <button name="diarrhoea" value="0" id="diarrhoea"class="symptom">Diarrhoea</button>
+                <button name="acute_liver_failure" value="0" id="acuteliver"class="symptom">Acute liver failure</button>
+                <button name="fluid_overload" value="0" id="fluidoverload"class="symptom">Fluid overload</button>
+                <button name="swelling_of_stomach" value="0" id="swellingofstomach"class="symptom">Swollen stomach</button>
+                <button name="pain_during_bowel_movements" value="0" id="painduringbowelmovements" class="symptom">Pain during bowel movements</button>
+                <button name="pain_in_anal_region" value="0" id="paininanalregion" class="symptom">Pain in anal region</button>
+                <button name="bloody_stool" value="0" id="bloodystool" class="symptom">Bloody stool</button>
+                <button name="irritation_in_anus" value="0" id="irritationinanus" class="symptom">Irritation in anus</button>
+                <button name="obesity" value="0" id="obesity" class="symptom">Obesity</button>
+                <button name="excessive_hunger" value="0" id="excessivehunger" class="symptom">Excessive hunger</button>
+                <button name="passage_of_gases" value="0" id="passageofgases" class="symptom">Passage of gases</button>
+                <button name="increased_appetite" value="0" id="increasedappetite" class="symptom">Increased appetite</button>
+                <button name="mucoid_sputum" value="0" id="mucoidsputum" class="symptom">Mucoid sputum</button>
+                <button name="stomach_bleeding" value="0" id="stomachbleeding" class="symptom">Stomach bleeding</button>
+                <button name="distention_of_abdomen" value="0" id="distentionofabdomen" class="symptom">Distention of abdomen</button>
+            </div>
+            <div class="container">
+                <h3>Urinary Tract</h3>
+                <button name="burning_micturition" value="0" id="bmicturition"class="symptom">Burning Micturition</button>
+                <button name="spotting_urination" value="0" id="surination"class="symptom">Spotting Urination</button>
+                <button name="dark_urine" value="0" id="darkurine"class="symptom">Dark urine</button>
+                <button name="yellow_urine" value="0" id="yellowurine"class="symptom">Yellow urine</button>
+                <button name="bladder_discomfort" value="0" id="bladderdiscomfort" class="symptom">Bladder discomfort</button>
+                <button name="foul_smell_of_urine" value="0" id="foulsmellofurine" class="symptom">Foul smell of urine</button>
+                <button name="continuous_feel_of_urine" value="0" id="continuousfeelofurine" class="symptom">Continuous feel of urine</button>
+                <button name="polyuria" value="0" id="polyuria" class="symptom">Polyuria</button>
+            </div>
+            <div class="container">
+                <h3>Neurological</h3>
+                <button name="fatigue" value="0" id="fatigue"class="symptom">Fatigue</button>
+                <button name="anxiety" value="0" id="anxiety" class="symptom">Anxiety</button>
+                <button name="mood_swings" value="0" id="moodswings" class="symptom">Mood Swings</button>
+                <button name="restlessness" value="0" id="restlessness"class="symptom">Restlessness</button>
+                <button name="lethargy" value="0" id="lethargy"class="symptom">Lethargy</button>
+                <button name="dehydration" value="0" id="dehydration"class="symptom">Dehydration</button>
+                <button name="indigestion" value="0" id="indigestion"class="symptom">Indigestion</button>
+                <button name="headache" value="0" id="headache"class="symptom">Headache</button>
+                <button name="nausea" value="0" id="nausea"class="symptom">Nausea</button>
+                <button name="loss_of_appetite" value="0" id="lossappetite"class="symptom">Loss of appetite</button>
+                <button name="high_fever" value="0" id="highfever"class="symptom">High fever</button>
+                <button name="mild_fever" value="0" id="mildfever"class="symptom">Mild fever</button>
+                <button name="malaise" value="0" id="malaise" class="symptom">Malaise</button>
+                <button name="dizziness" value="0" id="dizziness" class="symptom">Dizziness</button>
+                <button name="slurred_speech" value="0" id="slurredspeech" class="symptom">Slurred speech</button>
+                <button name="spinning_movements" value="0" id="spinningmovements" class="symptom">Spinning movements</button>
+                <button name="loss_of_balance" value="0" id="lossofbalance" class="symptom">Loss of balance</button>
+                <button name="unsteadiness" value="0" id="unsteadiness" class="symptom">Unsteadiness</button>
+                <button name="depression" value="0" id="depression" class="symptom">Depression</button>
+                <button name="irritability" value="0" id="irritability" class="symptom">Irritability</button>
+                <button name="altered_sensorium" value="0" id="alteredsensorium" class="symptom">Altered sensorium</button>
+                <button name="lack_of_concentration" value="0" id="lackofconcentration" class="symptom">Lack of concentration</button>
+                <button name="coma" value="0" id="coma" class="symptom">Coma</button>
+            </div>
+            <div class="container">
+                <h3>Pain</h3>
+                <button name="joint_pain" value="0" id="jointpain" class="symptom">Joint pain</button>
+                <button name="pain_behind_the_eyes" value="0" id="painbehindeyes"class="symptom">Pain behind the eyes</button>
+                <button name="abdominal_pain" value="0" id="abdominalpain"class="symptom">Abdominal pain</button>
+                <button name="back_pain" value="0" id="backpain"class="symptom">Back pain</button>
+                <button name="chest_pain" value="0" id="chestpain" class="symptom">Chest pain</button>
+                <button name="cramps" value="0" id="cramps" class="symptom">Cramps</button>
+                <button name="neck_pain" value="0" id="neckpain" class="symptom">Neck pain</button>
+                <button name="knee_pain" value="0" id="kneepain" class="symptom">Knee pain</button>
+                <button name="hip_joint_pain" value="0" id="hipjointpain" class="symptom">Hip joint pain</button>
+                <button name="muscle_pain" value="0" id="musclepain" class="symptom">Muscle pain</button>
+                <button name="belly_pain" value="0" id="bellypain" class="symptom">Stomach pain</button>
+            </div>
+            <div class="container">
+                <h3>Muscle/skeletal</h3>
+                <button name="muscle_weakness" value="0" id="muscleweakness" class="symptom">Muscle weakness</button>
+                <button name="stiff_neck" value="0" id="stiffneck" class="symptom">Stiff neck</button>
+                <button name="swelling_joints" value="0" id="swellingjoints" class="symptom">Swelling joints</button>
+                <button name="movement_stiffness" value="0" id="movementstiffness" class="symptom">Movement stiffness</button>
+                <button name="prominent_veins_on_calf" value="0" id="prominentveinsoncalf" class="symptom">Prominent veins on calf</button>
+                <button name="painful_walking" value="0" id="painfulwalking" class="symptom">Painful walking</button>
+                <button name="weakness_in_limbs" value="0" id="weaknessinlimbs" class="symptom">Weakness in limbs</button>
+                <button name="muscle_wasting" value="0" id="Muscle"class="symptom">Muscle wasting</button>
+            </div>
+            <div class="container">
+                <h3>Others</h3>
+                <button name="cold_hands_and_feets" value="0" id="chands" class="symptom">Cold hands and feet</button>
+                <button name="sunken_eyes" value="0" id="sunkeneyes"class="symptom">Sunken eyes</button>
+                <button name="sweating" value="0" id="sweating"class="symptom">Sweatings</button>
+                <button name="yellowing_of_eyes" value="0" id="yelloweyes"class="symptom">Yellowing of eyes</button>
+                <button name="swelled_lymph_nodes" value="0" id="swelledlymphnodes" class="symptom">Swollen lymphnodes</button>
+                <button name="blurred_and_distorted_vision" value="0" id="blurredanddistortedvision" class="symptom">Blurred and distorted vision</button>
+                <button name="redness_of_eyes" value="0" id="rednessofeyes" class="symptom">Redness of eyes</button>
+                <button name="fast_heart_rate" value="0" id="fastheartrate" class="symptom">Fast heartrate</button>
+                <button name="swollen_legs" value="0" id="swollenlegs" class="symptom">Swollen legs</button>
+                <button name="swollen_blood_vessels" value="0" id="swollenbloodvessels" class="symptom">Swollen blood vessels</button>
+                <button name="puffy_face_and_eyes" value="0" id="puffyfaceandeyes" class="symptom">Puffy face and eyes</button>
+                <button name="enlarged_thyroid" value="0" id="enlargedthyroid" class="symptom">Enlarged thyroid</button>
+                <button name="swollen_extremeties" value="0" id="swollenextremeties" class="symptom">Swollen extremeties</button>
+                <button name="extra_marital_contacts" value="0" id="extramaritalcontacts" class="symptom">Extramarital contacts</button>
+                <button name="weakness_of_one_body_side" value="0" id="weaknessofonebodyside" class="symptom">Weakness of one body side</button>
+                <button name="internal_itching" value="0" id="internalitching" class="symptom">Internal itching</button>
+                <button name="abnormal_menstruation" value="0" id="abnormalmenstruation" class="symptom">Abnormal menstruation</button>
+                <button name="watering_from_eyes" value="0" id="wateringfromeyes" class="symptom">Watery eyes</button>
+                <button name="family_history" value="0" id="familyhistory" class="symptom">Family history</button>
+                <button name="visual_disturbances" value="0" id="visualdisturbances" class="symptom">Visual disturbances</button>
+                <button name="receiving_blood_transfusion" value="0" id="receivingbloodtransfusion" class="symptom">Receiving blood transfusion</button>
+                <button name="receiving_unsterile_injections" value="0" id="receivingunsterileinjections" class="symptom">Receiving unsterile injections</button>
+                <button name="history_of_alcohol_consumption" value="0" id="historyofalcoholconsumption" class="symptom">History of alcohol consumption</button>
+            </div>     
+        </div><br><br><br>
+        </div>
+        
+    <div class="end">
+        <button type="submit" id="predict">Diagnosis</button>
+        <button type="submit" id="refresh">Reset</button>
+        <div class="results"></div>
+    </div>
+    </form>
+    <footer class="footer"><p>&copy;2020 kojusola</p></footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

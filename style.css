@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Neuton:wght@200&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+.body{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-image:linear-gradient(45deg, #65a6a8,#a1d0d1);
+}
+.topnav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin sans', sans-serif;
+    background-color:;
+}
+.introduction{
+    text-align: center;
+    font-family: 'Arvo', sans-serif;
+}
+.symptom{
+    background-color: #A0615F;
+    width: 150px;
+    height:50px;
+    border:1px #A0615F solid;
+    border-radius: 15px;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.symptom:hover{
+    background-color: #8b8b8b;
+    width: 157px;
+    height:55px;
+    border:1px #8b8b8b solid;
+}
+.clicked{
+    background-color: #402726;
+    width: 140px;
+    height:50px;
+    font-family: 'Montserrat', sans-serif;
+    border:1px #402726 solid;
+
+}
+.end{
+    width: 700px;
+    margin: auto;
+}
+#predict{
+    background-color: #043335;
+    width: 200px;
+    height:70px;
+    border:1px #043335 solid;
+    border-radius: 15px;
+    margin: 20px;
+}
+#refresh{
+    background-color: #043335;
+    width: 200px;
+    height:70px;
+    border:1px #043335 solid;
+    border-radius: 15px;
+    margin: 20px;
+    justify-items: centre;
+}
+.diag{
+    font-size:22px;
+}
+.diag p{
+    font-size:17px;
+    font-family: 'Arvo', sans-serif;
+}
+.container{
+    width: 700px;
+    text-align: center;
+    background-color:white;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 5px 6px #65a6a8;
+    padding: 10px;
+}
+.content2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
+.footer p{
+    margin: 0;
+}
+@media only screen and (max-width:1400px) and (min-width:700px){
+    .container{
+        width: 600px;
+    }
+}
+@media only screen and (max-width:700px){
+    .container{
+        width: 500px;
+    }
+    #predict{
+        width: 120px;
+        height:50px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+    #refresh{
+        width: 120px;
+        height:50px;
+        border-radius: 5px;
+        margin: 20px;
+    }
+    .symptom{
+        width: 120px;
+        height:50px;
+        border:1px #A0615F solid;
+        border-radius: 5px;
+        margin: 10px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .symptom:hover{
+        background-color: #8b8b8b;
+        width: 127px;
+        height:52px;
+        border:1px #8b8b8b solid;
+    }
+    .end{
+        width: 400px;
+    }
+    .diag{
+        font-size:15px;
+    }
+    .diag p{
+        font-size:13px;
+        font-family: 'Arvo', sans-serif;
+    }
+}
