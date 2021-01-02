@@ -53,6 +53,7 @@
     border:1px #043335 solid;
     border-radius: 15px;
     margin: 20px;
+    color:white;
 }
 #refresh{
     background-color: #043335;
@@ -62,6 +63,7 @@
     border-radius: 15px;
     margin: 20px;
     justify-items: centre;
+    color:white;
 }
 .diag{
     font-size:22px;
@@ -112,6 +114,7 @@
         height:50px;
         border-radius: 5px;
         margin: 20px;
+        color:white;
     }
     .symptom{
         width: 120px;
